@@ -1,4 +1,5 @@
 import re
+import subprocess
 
 import requests
 
@@ -276,7 +277,6 @@ class gitip:
 
 if __name__ == '__main__':
     ip_list = []
-    error = 0
     github = gitip(ip_list)
     github.get_1()
     github.get_2()
@@ -311,3 +311,4 @@ if __name__ == '__main__':
     github.get_31()
     github.get_32()
     github.get_33()
+    subprocess.run("explorer.exe %s" % 'C:\Windows\System32\drivers\etc')

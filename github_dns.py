@@ -1,5 +1,6 @@
 import re
 import subprocess
+from time import sleep
 
 import requests
 
@@ -311,4 +312,7 @@ if __name__ == '__main__':
     github.get_31()
     github.get_32()
     github.get_33()
+    print("请复制上边结果")
     subprocess.run("explorer.exe %s" % 'C:\Windows\System32\drivers\etc')
+    print("程序将在15S后退出")
+    sleep(15)
